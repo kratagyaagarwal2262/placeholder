@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "896141375034",
+    "project_id": "placehole-482e2",
+    "storage_bucket": "placehole-482e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896141375034:android:ca8d0546c0aaba0ef0e703",
+        "android_client_info": {
+          "package_name": "com.example.placeholder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896141375034-vja8q8v9971ko7n7gd6ohlejrip4rr40.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.placeholder",
+            "certificate_hash": "9a4f33a057e69117c77cfb679fc4961105f043d3"
+          }
+        },
+        {
+          "client_id": "896141375034-efvdtaaesdcvlhrcsglo2cmhl2f7efcj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD63pSDicmUQqlE1eFgNtpQ8HxSVjQuRx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896141375034-efvdtaaesdcvlhrcsglo2cmhl2f7efcj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
