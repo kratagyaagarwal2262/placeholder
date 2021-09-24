@@ -12,6 +12,7 @@ import 'authentication/register.dart';
 
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
       title: "Chess Clock",
       initialRoute: 'login',
       routes: {

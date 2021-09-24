@@ -1,24 +1,42 @@
+// To parse this JSON data, do
+//
+//     final album = albumFromJson(jsonString);
+
+import 'dart:convert';
+
+List<Album> albumFromJson(String str) => List<Album>.from(json.decode(str).map((x) => Album.fromJson(x)));
+
+String albumToJson(List<Album> data) => json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
+
 class Album {
-  int? id;
-  String? name;
-  String? htmlUrl;
-  String? description;
+  Album({
+    required this.id,
+    required this.nodeId,
+    required this.name,
+    required this.htmlUrl,
+    required this.description,
+  });
 
-  Album({required this.id, required this.name, required this.htmlUrl, required this.description});
+  int id;
+  String nodeId;
+  String name;
+  String htmlUrl;
+  String description;
 
-  Album.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
-    name = json['name'];
-    htmlUrl = json['html_url'];
-    description = json['description'];
-  }
+  factory Album.fromJson(Map<String, dynamic> json) => Album(
+    id: json["id"],
+    nodeId: json["node_id"],
+    name: json["name"],
+    htmlUrl: json["html_url"],
+    description: json["description"],
+  );
 
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['name'] = this.name;
-    data['html_url'] = this.htmlUrl;
-    data['description'] = this.description;
-    return data;
-  }
+  Map<String, dynamic> toJson() => {
+    "id": id,
+    "node_id": nodeId,
+    "name": name,
+    "html_url": htmlUrl,
+    "description": description,
+  };
 }
+
